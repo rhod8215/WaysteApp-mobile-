@@ -1,0 +1,9 @@
+{
+  "name": "third_exc",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "118217c6"
+}

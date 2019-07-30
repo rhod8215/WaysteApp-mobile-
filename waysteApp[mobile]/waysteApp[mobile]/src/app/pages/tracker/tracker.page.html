@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="toolbar_title">Wayste</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="no-scroll">
+
+  <div class="map-wrapper">
+     
+        <div #map id="map"></div>
+     
+        
+        
+
+            <div class="no-scrollbar">
+                <ion-card text-wrap>
+                  <ion-item>
+                    <ion-icon name="trash" slot="start"></ion-icon>
+                    <ion-select class= "waste_s" id="dispose"  disabled = {{isDisabled}} multiple="true"  [(ngModel)]="wayste_collectors" (ionChange)="checkwastecollect()" placeholder="Nothing in the bin yet..">
+                      <ion-select-option *ngFor="let waste of datasource.source; let i = index" [value]=waste.waste_name >
+                        {{waste.waste_name}}</ion-select-option>
+                       
+                    </ion-select>
+                    <!-- <ion-icon name="notifications" slot="end"></ion-icon> -->
+                  </ion-item>
+                </ion-card>
+              </div>
+
+            
+
+              <div class= "cam_bu" *ngIf="ishidden">
+        
+                <button ion-button class="cam_"  *ngIf="ishidden"  (click)="openCam()">Take A Photo</button>
+              
+              </div>
+              <div class="dis_but" *ngIf = "dispose_b"  >
+
+                  <button ion-button class="dispose_b" (click) ="trackingbut()" > Dispose</button>
+              </div>
+             
+
+             
+                <div class="info_km" *ngIf="info_km" > 
+                    <ion-label class="name_c" *ngIf="info_km"> 2 collectors</ion-label>
+                </div>
+                
+                <div class="collector_info" *ngIf = fab_but>
+                  <ion-avatar class="avatar">
+                    <img src="/assets/waysteLogo/kya.jpg"> 
+                  </ion-avatar>
+                  <ion-label class="name_c"> Kuya Friddie</ion-label>
+                </div>
+                <div class="captured_p" *ngIf= "captured_p"> 
+                  <img src="{{image}}" style="height:200px ; width:150px;"> 
+                </div>
+
+                
+        
+
+
+      </div>
+     
+      <ion-bottom-drawer style="position: fixed; top:0px; "  *ngIf="b_drawer" [(state)]="drawerState" [minimumHeight]="minimumHeight" [dockedHeight]="dockedHeight" [shouldBounce]="shouldBounce"
+ [distanceTop]="distanceTop">
+	<div class="drawer-content">
+    <ion-item lines="none" text-wrap>
+      <ion-avatar class="dp">
+        <ion-img src="../assets/waysteLogo/kya.jpg"></ion-img>
+      </ion-avatar>
+      <p>
+        <input type="text" value="Collector" disabled="true" style="border: none; background-color: white; margin-left: 10px;">
+        <ion-fab class="button-float-left" slot="fixed">
+          <ion-fab-button color="success" (click)="callNow('09077333494')">
+            <ion-icon name="call"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+        <ion-fab class="button-float-right" slot="fixed">
+          <ion-fab-button color="danger" (click) ="openModal()">
+            <ion-icon name="mail"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </p>
+    </ion-item>
+    <ion-item lines="none" text-wrap style="margin-top: 4mm;">
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input type="password" disabled style="font-size: 15px;">Rhodema Nasala Sorronda</ion-input>
+    </ion-item>
+    <ion-item lines="none" text-wrap>
+      <ion-label position="stacked">Phone Number</ion-label>
+      <ion-input type="password" disabled style="font-size: 15px;">+639 056 892 321</ion-input>
+    </ion-item>
+    <ion-item lines="none" text-wrap>
+      <ion-label position="stacked">Residential Address</ion-label>
+      <ion-input type="text" disabled style="font-size: 15px;">Dansadorm, Boni Ave., Mandaluyong City, Metro Manila</ion-input>
+    </ion-item>
+    <ion-item lines="none" text-wrap>
+      <ion-label position="stacked">Company</ion-label>
+      <ion-input type="password" disabled style="font-size: 15px;">Bridge 360</ion-input>
+    </ion-item>
+    <ion-item lines="none" text-wrap>
+      <ion-label position="stacked">Company Address</ion-label>
+      <ion-input type="text" disabled style="font-size: 15px;">Kamagong St., San Antonio Village, Makati City, Metro Manila</ion-input>
+    </ion-item>
+    <ion-row justify-content-center style="margin-top: 50px;">
+      <ion-button color="danger" (click)="presentAlertConfirm()" fill="clear"><ion-icon name="close" slot="start"></ion-icon>Cancel Transaction</ion-button>
+    </ion-row>
+	</div>
+</ion-bottom-drawer>
+
+     
+      
+      
+     
+      
+<!-- </ion-content> -->
+

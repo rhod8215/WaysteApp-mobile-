@@ -1,0 +1,264 @@
+
+#map_canvas {
+  width: 90%;
+  height: 80%;
+  border: 1px solid red;
+  --overflow: hidden;
+}
+
+
+#address {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#map {
+  width: 100%;
+  height: 150vh;
+  --overflow: hidden;
+}
+
+.map-wrapper {
+  position: relative;
+  --overflow: hidden;
+
+  #map_center {
+    position: absolute;
+    z-index: 99;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -41px;
+  }
+}
+
+	
+#map_canvas {
+  width: 90%;
+  height: 80%;
+  border: 1px solid red;
+}
+ 
+ 
+#address {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+ 
+#map {
+  width: 100%;
+  height: 100vh;
+}
+ 
+.map-wrapper {
+  position: relative;
+ 
+  #map_center {
+    position: absolute;
+    z-index: 99;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -41px;
+  }
+}
+
+ion-toolbar{
+  --background: url('/assets/waysteLogo/bg-img.jpg') fixed; 
+}
+
+ion-content .margin-left{
+    margin-left: 0.75cm;
+
+}
+
+ion-content .text-center{
+    text-align: center;
+}
+
+ion-content .larger{
+    font-size: 100%;
+}
+
+ion-content .no-scrollbar{
+   
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+ion-content .cam_bu, .dis_but{
+  position: absolute;
+  
+  width: 100%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  z-index: 1000;
+  text-align:center;
+  display: block;
+}
+
+ion-content .cam_bu {
+  top: 70%;
+}
+ion-content .dis_but{
+  top: 70%;
+}
+
+ion-content .collector_info, .info_km{
+  position:absolute;
+  top:60%;
+  text-align:center;
+  display: block;
+  width: 100%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  z-index: 1000;
+
+}
+.avatar{
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.name_c{
+
+  border: 1px solid black   ;
+ padding: 3px;
+ background-color: yellow;
+
+
+ border-radius: 4px;
+}
+
+ion-select{
+    max-width: 100% !important;
+}
+
+ion-content .b-right{
+
+  position:absolute;
+  text-align:right;
+  width: 100%;
+
+}
+
+.box {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+.no-scroll {
+  --background: none;
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/assets/waysteLogo/bg-img.jpg');
+  
+
+  }
+ion-content{
+
+  --overflow: hidden; 
+}
+
+ion-content .boxContainer {
+  // display: table;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.call_chat_btn{
+  // transform: translateX(-50%);
+  // transform: translateY(-50%);
+
+  position: absolute;
+}
+
+ion-content .cam_ , .dispose_b{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ion-content .cam_bu {
+
+  width: 100%;
+}
+
+// .button-float-right{
+//   z-index: 12;
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+//   bottom: 150px;
+//   right:20px;
+//   border-radius: 50% !important;
+// }
+
+// .button-float-left{
+//   z-index: 12;
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+//   bottom: 150px;
+//   left: 20px;
+//   border-radius: 50% !important;
+// }
+.captured_p{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.waste_s{
+
+  padding: 0px;
+}
+
+
+.drawer-content {
+  border-top: 0.5px solid #e5e5e5;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+
+
+.button-float-left{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  position: fixed;
+  right: 80px;
+  top: 20px;
+  border-radius: 50% !important;
+}
+
+.button-float-right{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  position: fixed;
+  right: 15px;
+  top: 20px;
+  border-radius: 50% !important;
+}
+.toolbar_title{
+  font-weight: bold;
+  
+ 
+  color:green;
+  text-shadow:2px 2px 10px white, 2px 2px 10px #ccc;
+  font-size:28px;
+  text-align: center;
+}
+

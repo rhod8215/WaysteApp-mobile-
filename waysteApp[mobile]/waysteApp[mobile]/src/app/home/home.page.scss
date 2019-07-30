@@ -1,0 +1,71 @@
+
+ion-content {
+  --background: none;
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/assets/waysteLogo/bg-img.jpg');
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  --overflow: hidden; 
+  margin:auto;
+}
+.s_g, .s_f{
+  //text-transform: capitalize; 
+  font-size: 12px; 
+  border:.5px solid;
+  border-color: lightgreen;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+// .s_g:hover{
+//   background-color: red!important;
+
+// }
+// .s_f:hover{
+//   background-color: darkblue!important;
+
+// }
+.passwordIcon{
+  font-size:2rem !important;
+ 
+  top: 0px !important;
+  margin: 0 auto !important;
+  
+}
+
+.center-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 65%; 
+}
+
+.button-bottom{
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+// .login_b{
+//   --color: #78c288;
+
+// }
+.or_label{
+  
+  display: flex; 
+  flex-direction: row; 
+}
+.or_label:before,
+.or_label:after{
+  content: ""; 
+            flex: 1 1; 
+            border-top: 1px solid grey; 
+            margin-left: 20px;
+            margin-right: 20px;
+
+}
+.alert-message {
+  font-size:15px;
+}

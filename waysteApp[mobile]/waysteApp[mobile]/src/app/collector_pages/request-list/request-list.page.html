@@ -1,0 +1,104 @@
+<ion-header>
+ 
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+ </ion-buttons>
+   
+
+</ion-header>
+
+<ion-content class="bg-r">
+
+  
+    <!-- <button ion-button full icon-left (click)="startTracking()" *ngIf="!isTracking">
+        <ion-icon name="locate"></ion-icon>
+        Start Tracking
+      </button>
+    <button ion-button full color="danger" icon-left (click)="stopTracking()" *ngIf="isTracking">
+        <ion-icon name="hand"></ion-icon>
+        Stop Tracking
+    </button> -->
+    
+   <div class="map_wrap">
+
+      <div #map id="map_cr"></div>
+    
+   </div>
+   <div class="in_req">
+
+      <!-- <ion-button (click)="toggleInfiniteScroll()" expand="block">
+        Toggle Infinite Scroll
+      </ion-button> -->
+     
+      <ion-list>
+        <ion-card>
+          <ion-card-content>
+            <ion-item-divider class="item_req"  padding-end="10px">
+
+                  
+                  
+                  <ion-card-title> REQUEST LIST</ion-card-title>
+                  <ion-toggle slot="end" [(ngModel)]="req_hideT" disabled="false" (ionChange)="req_hideTog()"></ion-toggle>
+             
+            
+          </ion-item-divider>
+          </ion-card-content>
+            
+
+       
+          <div class="reqList" *ngIf=req_list>
+   
+            <ion-item-divider *ngFor="let item of datasource.source">
+                <ion-text style="font-size: 5mm;">
+                    <strong>{{item.requested_by_FIRSTNAME}} {{item.requested_by_LASTNAME}}</strong>
+                    <ion-label text-wrap style="font-size: 4mm;"><b>ADDRESS:</b> {{item.collected_at}}<br>
+                      6.9 KM Away<br>
+                    </ion-label>
+                    <ion-label text-wrap style="font-size: 4mm;"><b>WASTES:</b>Bulk Wastes, Residual Wastes</ion-label>
+                  </ion-text>
+                  <ion-button  (click)="presentModal(item.requested_by_FIRSTNAME, item.requested_by_LASTNAME, item.collected_at, item.is_accepted)" color="success" size="medium" slot="end"><ion-icon name="eye" slot="start"></ion-icon>View</ion-button>
+              
+
+            </ion-item-divider>
+              
+              </div>
+            
+        </ion-card>
+       
+
+      </ion-list>
+     
+      <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+    
+    <!-- <div style="margin: 1cm;">
+        <ion-text><h3><strong>Request List</strong></h3></ion-text>
+        <br>
+        <ion-list>
+          <ion-item lines="inset">
+            <ion-text>
+              <strong>Ismael Mangondato</strong>
+              <ion-label text-wrap style="font-size: 4mm;">Shaw Boulevard, Mandaluyong, Metro Manila 1800<br>
+              6.9 KM Away<br>
+              Bulk Wastes, Residual Wastes
+              </ion-label>
+            </ion-text>
+            <ion-button (click)="presentModal()" color="secondary" size="medium" slot="end"><ion-icon name="eye" slot="start"></ion-icon>View</ion-button>
+          </ion-item>
+        </ion-list>
+      </div> -->
+   
+    <!-- <ion-list>
+      <ion-list-header>Previous Tracks</ion-list-header>
+      <ion-item *ngFor="let route of previousTracks">
+        {{ route.finished | date }}, {{ route.path.length }} Waypoints
+        <button ion-button clear item-end (click)="showHistoryRoute(route.path)">View Route</button>
+      </ion-item>
+    </ion-list> -->
+
+</ion-content>

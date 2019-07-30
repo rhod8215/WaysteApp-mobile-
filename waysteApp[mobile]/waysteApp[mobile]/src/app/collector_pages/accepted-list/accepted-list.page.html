@@ -1,0 +1,66 @@
+<ion-header>
+  
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+
+</ion-header>
+
+<ion-content>
+    <div class="map_wrap">
+
+        <div #map id="map_acc"></div>
+     </div>
+
+     <div class="accpt_list">
+     
+     <ion-list>
+      <ion-card>
+        <ion-card-content>
+          <ion-item-divider class="item_req"  padding-end="10px">
+          
+
+                <ion-card-title> PENDING JOB LIST</ion-card-title>
+                
+
+        </ion-item-divider>
+        </ion-card-content>
+          
+
+        
+        <div class="accList">
+        <ion-item-divider  padding  *ngFor="let item of datasource.source" >
+         
+
+              <ion-text>
+                  <strong>{{item.requested_by_FIRSTNAME}} {{item.requested_by_LASTNAME}}</strong>
+                  <ion-label text-wrap style="font-size: 4mm;">{{item.collected_at}}<br>
+                  6.9 KM Away<br>
+                  Bulk Wastes, Residual Wastes
+                  </ion-label>
+                </ion-text>
+                <ion-button  color="success" size="medium" slot="end" href="\tabs\trackpage"><ion-icon name="play" slot="start"></ion-icon>PICK-UP</ion-button>
+            
+
+        
+              </ion-item-divider>
+            </div>
+          
+      </ion-card>
+     
+
+    </ion-list>
+   
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="AcceptData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+     
+     
+     </div>
+      
+
+</ion-content>

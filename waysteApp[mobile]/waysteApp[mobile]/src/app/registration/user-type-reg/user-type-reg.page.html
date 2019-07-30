@@ -1,0 +1,35 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-row>
+      <ion-button fill="clear" color="dark" href="/home" style="padding-top: 12.5px;"><ion-icon name="arrow-round-back" style="font-size: 150%;"></ion-icon></ion-button>
+      <h6><ion-title>Registration</ion-title></h6>
+    </ion-row>
+  </ion-toolbar>
+  <ion-img src="/assets/waysteLogo/waysteface.png" class="center-logo" alt="logo"></ion-img>
+  <ion-card>
+    <ion-card-content>
+      <ion-label><h2><strong>Select User Type</strong></h2></ion-label>
+      <ion-item lines="none">
+        <ion-row style="margin: auto;" justify-content-center>
+          <ion-button fill="clear" color="dark" class="icon-button" (click)="RegisterModal()">
+            <div class="icon-button-inner" style="padding-top: 5mm;">
+              <ion-img src="/assets/reg_images/household.png"></ion-img>
+              <ion-label class="capital" style="font-size: 4mm; padding-top: 2mm;">Household</ion-label>
+            </div>
+          </ion-button>
+          <ion-button fill="clear" color="dark" class="icon-button" (click)="presentPopover()">
+            <div class="icon-button-inner">
+              <ion-img src="/assets/reg_images/wayste.png"></ion-img>
+              <ion-label class="capital" style="font-size: 4mm; padding-top: 1mm;">Collector</ion-label>
+            </div>
+          </ion-button>
+        </ion-row>
+      </ion-item>
+      <!--  -->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

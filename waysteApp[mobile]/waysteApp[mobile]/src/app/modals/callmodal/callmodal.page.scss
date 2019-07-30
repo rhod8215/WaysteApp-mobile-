@@ -1,0 +1,25 @@
+.avatar{
+    width:100% !important;  
+    height : 100% !important;  
+    max-width: 175px !important;  //any size
+    max-height: 175px !important; //any size
+    margin: auto;
+}
+
+.larger-icon{
+    font-size: 20px;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+
+.icon-button {
+    height: auto;
+    }
+    
+.icon-button-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+ion-tab-bar {
+    //--background: url('/assets/waysteLogo/bg-img.jpg') fixed; 
+    background-color:#9be668;
+    --border: 1px solid;
+}
+ion-tab-button {
+    background-color:#9be668 ;  
+}
+ion-tab-button:active{
+    --color-selected: white;
+}
+ion-tab{
+    --ion-tabbar-text-color: white !important;
+}

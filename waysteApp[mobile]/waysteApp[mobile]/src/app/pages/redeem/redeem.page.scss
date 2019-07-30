@@ -1,0 +1,49 @@
+ion-content{
+    --background: none;
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/assets/waysteLogo/bg-img.jpg');
+    
+}
+.close_redeem{
+    text-align: right;
+}
+
+ion-toolbar{
+    --background: url('/assets/waysteLogo/bg-img.jpg') fixed; 
+  }
+  
+  ion-slides{
+     max-width: block !important;
+    max-height: 100% !important;
+    margin-top:5px;
+    stroke: aliceblue;
+  
+
+        ion-slide{
+                width:block!important;
+                height:100% !important;
+            img{
+                width: block!important;
+                height:200px !important;
+            
+            }
+        }
+
+}
+
+.e_r{
+    text-align: right;
+}
+.eco_title{
+    font-size: 12px;
+    font-weight: bold;
+}
+.ans_eco{
+    font-size: 8px;
+    font-weight: bold;
+    color:green;
+}
+ion-col{
+    --ion-grid-column-padding-sm:     0px®;
+}
+
+  

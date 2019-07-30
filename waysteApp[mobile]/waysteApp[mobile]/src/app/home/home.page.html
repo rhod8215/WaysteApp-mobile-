@@ -1,0 +1,66 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  
+      <ion-img  src="/assets/waysteLogo/waysteface.png" class="center-logo" alt="logo"></ion-img>
+<div style="text-align:left; margin-left:10px;">
+  <ion-title color="dark">Sign In</ion-title>
+</div>
+<div style="margin-left:20px; margin-right:20px;">
+    <ion-item lines="inset" text-wrap style="--background:hover;">
+      <ion-label position="floating" color="dark" style="font-size: 12px;">Username</ion-label>
+      <ion-input size="10" type="text" clearInput required [(ngModel)]="logIndata.email" value="" required></ion-input>
+    </ion-item>
+    <ion-item lines="inset" text-wrap style="--background:hover;">
+      <ion-label position="floating" color="dark" style="font-size: 12px;" >Password</ion-label>
+      <ion-input size="10" [type]="password" clearOnEdit="true"  value="" required></ion-input>
+      
+      <ion-icon item-end [name]="passwordIcon"  class="passwordIcon" slot="end" (click)='hideShowPassword()'></ion-icon>
+    </ion-item>
+    <div style="text-align:right;"></div>
+  </div>
+
+  <div style="text-align:right">
+    <ion-button  style="text-transform: capitalize; font-size: 12px;" color="medium" fill="clear" (click)="presentPrompt()" >
+      <u>Forgot Password?</u>
+    </ion-button> 
+  </div>
+  <div class="button-bottom">
+      <ion-button color="success" href="" size="medium" expand="block"><ion-icon name="log-in" slot="start" ></ion-icon>Log-in</ion-button>
+    </div>
+   <div style="text-align: center;">
+    <br>
+     <ion-label class="or_label">or</ion-label> 
+  </div>
+    <div style="text-align: center; margin-bottom: 8px;">
+        
+        <ion-button class="s_g" expand="block" size="medium" color="default" fill="clear" href="/tabs/tracker" >
+          <ion-icon slot="start"  name="logo-facebook"></ion-icon>
+          Sign in with Facebook
+        </ion-button>
+      
+      </div>
+
+      <div style="text-align: center;">
+        
+          <ion-button class="s_f" expand="block" size="medium" color="danger" fill="clear" href="/tabs/request-list" >
+            <ion-icon slot="start"  name="logo-googleplus"></ion-icon>
+            Sign in with Google
+          </ion-button>
+        
+        </div>
+
+  <div style="text-align: center;">
+    <ion-button  style="text-transform: capitalize; font-size: 12px;" color="medium" fill="clear" href="/user-type-reg" ><u>Not a Member yet? Click here</u></ion-button>
+  </div>
+
+
+  
+      
+          
+ 
+      
+  
+</ion-content>

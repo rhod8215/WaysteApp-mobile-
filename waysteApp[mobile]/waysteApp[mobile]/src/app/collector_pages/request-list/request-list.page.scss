@@ -1,0 +1,62 @@
+// .map_wrap{
+
+//     position:relative;
+// }
+#map_cr{
+
+    width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+    
+}
+// ion-card .c_card{
+
+//     margin-top: 20px;
+// }
+
+.welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  .bg-r{
+    --background: none;
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/assets/waysteLogo/bg-img.jpg');
+  }
+
+
+  // .req_info{
+
+  //   position: fixed; /* Sit on top of the page content */
+  //   display: none; /* Hidden by default */
+  //   width: 100%; /* Full width (cover the whole page) */
+  //   height: 100%; /* Full height (cover the whole page) */
+  //   top: 0; 
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  //   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  //   cursor: pointer; /* Add a pointer on hover */
+  
+ 
+   
+    
+  // }
+  .req_tolb{
+  
+    --color: white;
+  }
+
+  .in_req{
+    position:absolute;
+    top:85%;
+    width:100%;
+    background-color: darkgreen;
+  }
+
+  .item_req{
+
+    margin-bottom:10px;
+  }

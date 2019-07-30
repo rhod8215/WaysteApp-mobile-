@@ -1,0 +1,14 @@
+.icon-button2 {
+    height: 30mm;
+    width: 30mm;
+}
+    
+.icon-button-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capital{
+    text-transform: capitalize;
+}

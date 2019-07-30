@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="dismiss()" slot="start" fill="clear" class="larger-icon"><ion-icon name="arrow-back" color="success"></ion-icon></ion-button>
+    <ion-title>Calling...</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- {{val}} -->
+  <ion-avatar class="avatar">
+    <img src="/assets/waysteLogo/dp.jpg"> 
+  </ion-avatar>
+  <ion-item>
+    <ion-text style="font-size: 6mm; margin: auto; text-align: center;">
+      <br>Rhodema Sorronda<br>
+      <ion-label style="font-size: 4mm" color="medium">
+          Mobile Number: +63 965 168 8244
+      </ion-label><br>
+    </ion-text>
+  </ion-item>
+  <ion-row justify-content-center align-items-center>
+      <ion-button fill="clear" color="dark" class="icon-button">
+        <div class="icon-button-inner">
+          <ion-icon name="megaphone" size="large"></ion-icon>
+          <ion-label class="capital" style="font-size: 3mm">Speaker</ion-label>
+        </div>
+      </ion-button>
+      <ion-button fill="clear" color="dark" class="icon-button">
+        <div class="icon-button-inner">
+          <ion-icon name="keypad" size="large"></ion-icon>
+          <ion-label class="capital" style="font-size: 3mm">Keypad</ion-label>
+        </div>
+      </ion-button>
+      <ion-button fill="clear" color="dark" class="icon-button">
+        <div class="icon-button-inner">
+          <ion-icon name="volume-high" size="large"></ion-icon>
+          <ion-label class="capital" style="font-size: 3mm">Volume<br>Up</ion-label>
+        </div>
+      </ion-button>
+  </ion-row>
+  <ion-row justify-content-center>
+    <ion-button fill="clear" color="dark" style="margin-top:20px;">
+      <img src="/assets/waysteLogo/endcall.png" style="width: 70px; height: 70px;">
+    </ion-button>
+  </ion-row>
+</ion-content>

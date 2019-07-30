@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-button fill="clear" style="margin-top: 15px; margin-left: -10px;" color="success" class="larger-icon" (click)="closeModal()"><ion-icon name="arrow-back"></ion-icon></ion-button>
+      <ion-thumbnail style="margin-left: -11px; margin-top: 10px; margin-bottom: 10px; margin-right: 20px; border-right-width: 10px;">
+        <ion-avatar class="avatar">
+          <img src="/assets/waysteLogo/dp.jpg"> 
+        </ion-avatar>
+      </ion-thumbnail><h5>Rhodema Sorronda</h5><ion-label style="margin-left: -157px;"><br><br>Mobile Number: +63 965 168 8244</ion-label>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-row>
+      <ion-textarea [(ngModel)]= "chat_text" placeholder="Enter Message here" rows="4" cols="110"></ion-textarea>
+      <ion-button fill="clear" (click)="sendTocustomer()" style="margin-top: 30px" class="larger-icon" color="success"><ion-icon name="send"></ion-icon></ion-button>
+    </ion-row>
+  </ion-item>
+</ion-footer>

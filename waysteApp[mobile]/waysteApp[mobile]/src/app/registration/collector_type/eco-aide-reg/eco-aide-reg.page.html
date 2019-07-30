@@ -1,0 +1,62 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-row>
+      <ion-button fill="clear" color="dark" href="/user-type-reg"><ion-icon name="arrow-round-back" style="font-size: 150%;"></ion-icon></ion-button>
+      <ion-title>Eco-Aide Registration</ion-title>
+    </ion-row>
+  </ion-toolbar>
+  <!-- <ion-img src="/assets/images/logo.png" class="center-logo" alt="logo"></ion-img> -->
+  <ion-item>
+    <ion-label position="floating" color="dark">First Name</ion-label>
+    <ion-input type="text" clearInput required></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating" color="dark">Last Name</ion-label>
+    <ion-input type="text" clearInput required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Address</ion-label>
+    <ion-select placeholder="Barangay" required>
+      <ion-select-option value="Barangay 1">Barangay 1</ion-select-option>  
+    </ion-select>
+    <ion-select placeholder="City/Municipality" required>
+      <ion-select-option value="Makati">Makati</ion-select-option>  
+    </ion-select>
+    <ion-select placeholder="Region" required>
+      <ion-select-option value="NCR">NCR</ion-select-option>  
+    </ion-select>
+    <ion-select placeholder="Country" required>
+      <ion-select-option value="Philippines">Philippines</ion-select-option>  
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Phone Number</ion-label>
+    <ion-input type="number" clearInput required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">User Type</ion-label>
+    <ion-input type="text" required value="Collector" disabled></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Collector Type</ion-label>
+    <ion-input type="text" required value="Hauler" disabled></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label position="floating" color="dark">E-mail</ion-label>
+    <ion-input type="text" clearInput required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Password</ion-label>
+    <ion-input type="password" clearInput required></ion-input>
+  </ion-item>
+  
+
+  <div class="button-bottom">
+    <ion-button color="success" href="/home"><ion-icon name="add-circle-outline" slot="start"></ion-icon>Register</ion-button>
+  </div>
+</ion-content>
